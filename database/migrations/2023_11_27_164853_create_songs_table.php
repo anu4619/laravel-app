@@ -13,6 +13,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('artist');
+
             $table->timestamps();
         });
     }
@@ -24,3 +25,4 @@ return new class extends Migration
         Schema::dropIfExists('songs');
     }
 };
+
