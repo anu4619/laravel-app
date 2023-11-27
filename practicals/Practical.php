@@ -1,7 +1,5 @@
 <?php
-
 namespace practicals;
-
 class Practical {
     //Prints "Hello, World!" to the standard output.
     public static function printHello() {
@@ -9,13 +7,21 @@ class Practical {
     }
  
     //Takes two numbers as arguments and returns their sum.
-     
+
     public static function add($num1, $num2) {
+        if (!is_numeric($num1) || !is_numeric($num2)) {
+            throw new \InvalidArgumentException("Both inputs must be numeric.");
+        }
         return $num1 + $num2;
     }
-    
+
+
+
      //Takes an integer 'n' as an argument and returns an array of
     public static function generateFibonacciSequence($n) {
+        if (!is_int($n)) {
+            throw new \InvalidArgumentException("Inputs must be Integer.");
+        }
         $fibSequence = array();
         if ($n > 0) {
             $a = 0;
@@ -30,15 +36,4 @@ class Practical {
         return $fibSequence;
     }
 }
-
-// Example usage:
-Practical::printHello();
-echo "\n";
-
-$sum = Practical::add(5, 7);
-echo "Sum: $sum\n";
-
-$fibonacciSequence = Practical::generateFibonacciSequence(10);
-echo "Fibonacci Sequence: " . implode(", ", $fibonacciSequence);
-
 ?>
