@@ -1,7 +1,7 @@
 <?php
 $n = 10; // Change this value to generate a different number of Fibonacci numbers
 $a = 0;
-$b = 1;
+$b = 1; // first two numbers of thr series
 
 echo "Fibonacci sequence of $n numbers:\n";
 
