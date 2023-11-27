@@ -4,7 +4,7 @@ $b = 10;
 
 echo "Before swapping: a = $a, b = $b\n";
 
-// Swapping logic
+// Swapping logic using another variable temp
 $temp = $a;
 $a = $b;
 $b = $temp;
