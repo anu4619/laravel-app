@@ -1,6 +1,7 @@
 <?php
 
 namespace songs;
+namespace Practicals;
 
 // Declaraction of class
 class Song {
@@ -38,8 +39,6 @@ class Song {
     public function getTempo() {
         return $this->tempo;
     }
-
-
     public function setTempo($tempo) {
         if (!is_numeric($tempo) || is_float($tempo)) {
             throw new \InvalidArgumentException("inputs must be numeric.");
@@ -47,12 +46,4 @@ class Song {
         $this->tempo = $tempo;
     }
 }
-
-// Example usage:
-$mySong = new Song("Song Title", "Artist Name", "Pop", 120);
-echo "Title: " . $mySong->getTitle() . "\n";
-echo "Artist: " . $mySong->getArtist() . "\n";
-echo "Genre: " . $mySong->getGenre() . "\n";
-echo "Tempo: " . $mySong->getTempo() . " \n";
-
 ?>
