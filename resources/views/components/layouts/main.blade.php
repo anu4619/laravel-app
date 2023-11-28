@@ -19,11 +19,12 @@
         <div class="nav-options">My Playlists</div>
         <div class="playlist-item">Playlist 1</div>
         <div class="playlist-item">Playlist 2</div>
-    </sidebar> 
+    </sidebar>
+
     @yield('content')
 
-<footer>
-    <p>&copy; 2023 Playlist Viewer | <a href="#">About</a> | <a href="#">Privacy</a></p>
-</footer>
+    <footer>
+        <p>&copy; 2023 Playlist Viewer | <a href="#">About</a> | <a href="#">Privacy</a></p>
+    </footer>
 </body>
 </html>
