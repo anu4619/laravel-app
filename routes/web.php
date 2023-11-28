@@ -30,7 +30,6 @@ Route::get('/songs_static', function () {
 
 
 
-
   Route::get('/songs', function () {
 // $song1 = new Song();
     // $song1->setTitle("Stan");

@@ -11,11 +11,6 @@ class Main extends Component
     public function __construct(string $pageName = '') {
         $this->pageName = $pageName;
       }
-    
-
-    /**
-     * Get the view / contents that represent the component.
-     */
     public function render(): View|Closure|string
     {
         if($this->pageName){
